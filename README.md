@@ -34,6 +34,7 @@ npm run dev
 Open in Browser
 
 You will see a local URL like:
+PROJECT GITHUB LINK IS _______________https://github.com/Deip-29/Todo-app.git______
 
 http://localhost:5173/
 Open it in your browser
