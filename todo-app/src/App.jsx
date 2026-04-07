@@ -7,7 +7,20 @@ function App() {
   const [tasks, setTasks] = useState([]);
   const [input, setInput] = useState("");
 
- 
+  const addTask = () => {
+    // add task function
+    if (input.trim() === "") return;
+
+    const newTask = {
+      id: Date.now(),
+      text: input,
+      completed: false,
+    };
+
+    setTasks([newTask, ...tasks]);
+    setInput("");
+  };
+
   return (
     <div className="container">
       <Header />
