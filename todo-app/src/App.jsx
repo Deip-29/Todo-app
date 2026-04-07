@@ -21,6 +21,20 @@ function App() {
     setInput("");
   };
 
+  const deleteTask = (id) => {          // delete task
+    setTasks(tasks.filter((task) => task.id !== id));
+  };
+
+  const toggleTask = (id) => {
+    setTasks(
+      tasks.map((task) =>
+        task.id === id
+          ? { ...task, completed: !task.completed }
+          : task
+      )
+    );
+  };
+
   return (
     <div className="container">
       <Header />
